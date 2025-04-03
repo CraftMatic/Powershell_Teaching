@@ -1,11 +1,11 @@
-﻿# Create a folder named "ENC"
-$folderpath = "C:\ENC"
+# Create a folder named "ENC"
+$folderpath = Read-Host "Enter the folder path you wish to be used: "
 New-Item -ItemType Directory -Path $folderpath
 Write-Output "$folderpath was created successfully" 
 
 
 # create a test document in the "ENC" folder
-$filename = "Testbed.txt"
+$filename = Read-Host "Enter what file name you wish to be created: "
 $testfilepath = "$folderpath\$filename"
 new-item -ItemType File -Path $testfilepath
 Write-Output "$filename was created successfully"
