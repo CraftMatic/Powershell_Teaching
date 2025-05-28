@@ -1,3 +1,6 @@
+Write-output "Hello and welcome to this test script"
+pause
+
 # Create a folder named "ENC"
 $folderpath = Read-Host "Enter the folder path you wish to be used: "
 New-Item -ItemType Directory -Path $folderpath
